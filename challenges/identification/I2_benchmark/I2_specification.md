@@ -14,9 +14,9 @@ Based on the input data the following metrics are computed:
 1. Sensitivity = (TP/(TP+FN))
 2. FDR = (FP/(TP+FP))
 
-TP - true positives  
-FP - false positives  
-FN - false negatives
+TP - true positives - PAS identified by the tool and present in the orthogonal dataset  
+FP - false positives - PAS identified by the tool and not present in the orthogonal dataset  
+FN - false negatives - PAS not identified by the tool but present in the orthogonal dataset
 
 ## General info
 
@@ -55,8 +55,8 @@ description of each attribute-value pair:
   
   | Attribute | Type | Unit | Description |
   | --- | --- | --- | --- |
-  | `sensitivity` | `float` | N/A | Sensitivity of PAS identification compared with orthogonal dataset |
-  | `FDR` | `float` | N/A | False Discovery Rate of PAS identification compared with orthogonal dataset |
+  | `sensitivity` | `float` | N/A | Sensitivity of PAS identification compared with orthogonal dataset; Sensitivity = (TP/(TP+FN)) |
+  | `FDR` | `float` | N/A | False Discovery Rate of PAS identification compared with orthogonal dataset; FDR = (FP/(TP+FP)) |
   
 ## Metrics
   
